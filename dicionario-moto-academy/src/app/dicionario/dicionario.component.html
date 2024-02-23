@@ -1,0 +1,14 @@
+<!-- dicionario.component.html -->
+<h1>Dicionário</h1>
+
+<div id="searchContainer">
+    <label for="word">Palavra:</label>
+    <input type="text" id="word" [(ngModel)]="word">
+    <button (click)="searchWord()">Pesquisar</button>
+    <!-- Adicionado botão para falar a palavra -->
+    <button (click)="speakWord()">🔊 Falar</button>
+</div>
+
+<div id="resultContainer" class="result">
+    <!-- Resultado será exibido aqui -->
+</div>
